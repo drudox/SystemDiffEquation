@@ -3,12 +3,12 @@
 # include <string>
 # include "rhsODEproblem.H" 
 # include <cmath>
-# include "ForwardEulerSolver.H"
-# include "BackwardEulerSolver.H"
-# include "ModifiedEulerSolver.H"
-# include "HeunSolver.H"
-# include "RungeKutta4Solver.H"
-# include "AdamsBashforth2ndSolver.H"
+# include "Euler/ForwardEulerSolver.H"
+# include "Euler/BackwardEulerSolver.H"
+# include "RungeKutta/ModifiedEulerSolver.H"
+# include "RungeKutta/HeunSolver.H"
+# include "RungeKutta/RungeKutta4th/RungeKutta4thSolver.H"
+# include "Multistep/AdamsMethods/AdamsBashforth/AdamsBashforth2ndSolver.H"
 
 using namespace std;
 using namespace mg::numeric::odesystem ;
@@ -71,8 +71,7 @@ int main()
    RungeKutta4Solver<double> rk4_1(p1);
    rk4_1.solve("RK4System_oscillator.out");   
 
-   LeapFrogSolver<double> leapFrog(p1);
-   leapFrog.solve("LeapFrogSystem_oscillator.out");
+   
    
   return 0;    
 
