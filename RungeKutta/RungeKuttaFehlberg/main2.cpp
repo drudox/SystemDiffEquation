@@ -42,7 +42,7 @@ int main(){
   
    const double t0 = 0.0;
    const double tf = 2 ;
-   const double dt = 0.05;
+   const double dt = 0.04;
  //  const std::vector<double> u0 = {1 ,0.1} ;
    const std::valarray<double> u0 = {exp(-5.0)} ;  
    string fname = "analitical_1.out" ; 
