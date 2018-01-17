@@ -3,18 +3,12 @@
 # include <string>
 # include "../../rhsODEproblem.H" 
 # include <cmath>
-/*# include "AdamsBashforth2ndSolver.H"
-# include "AdamsBashforth3thSolver.H"
-# include "AdamsBashforth4thSolver.H"
-# include "AdamsBashforth5thSolver.H"
-*/
+
 #include "../RungeKutta.H"
 # include "RungeKuttaFehlberg45Solver.H"
 # include "../RungeKutta4th/RungeKutta4thSolver.H"
 
-//# include "AdamsMoulton3thSolver.H"
-//# include "AdamsMoulton4thSolver.H"
-//# include "AdamsMoulton5thSolver.H"
+
 
 using namespace std;
 using namespace mg::numeric::odesystem ;
@@ -52,26 +46,7 @@ int main(){
          
    
  
-/* 
-   AdamsBashforth2ndSolver<double> ab2(p1);
-   ab2.solve("AdamsBashforthSystem_1.out");
-   
-   AdamsBashforth3thSolver<double> ab3(p1);
-   ab3.solve("AdamsBashforth3thSystem_1.out");
-   
-   AdamsBashforth4thSolver<double> ab4(p1);
-   ab4.solve("AdamsBashforth4thSystem_1.out");
-   
-   AdamsBashforth5thSolver<double> ab5(p1);
-   ab5.solve("AdamsBashforth5thSystem_1.out");
-*/   
-/*
-   AdamsMoulton3thSolver<double> am3(p1); 
-   am3.solve("AdamsMoulton3thSystem_1.out");
-   
-   AdamsMoulton4thSolver<double> am4(p1); 
-   am4.solve("AdamsMoulton4thSystem_1.out");
-*/
+
    RungeKutta4Solver<double> rk4(p1); 
    rk4.solve("rk4_1.out");
 
