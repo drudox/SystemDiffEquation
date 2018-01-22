@@ -159,7 +159,7 @@ inline void RungeKuttaFehlberg45Solver<Type>::solve(std::string filename) {
                   
 
                         // 4-th order Runge Kutta (Fehlberg) method
-             u1[j] = u[j] + (25.0/216.0*k1[j] + 1408.0/2565.0*k3[j] + 2197.0/4104.0*k4[j]-1.0/5.0*k5[j]);   
+             u1[j] = u[j] + (25.0/216.0*k1[j] + 1408.0/2565.0*k3[j] + 2197.0/4101.0*k4[j]-1.0/5.0*k5[j]);   
                        
                        // 5-th order Runge Kutta (Fehlberg ) method 
              u2[j] = u[j] + (16.0/135.0*k1[j] + 6656.0/12825.0 *k3[j] + 28561.0/56430.0* k4[j] 
