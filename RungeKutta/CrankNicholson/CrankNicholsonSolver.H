@@ -1,5 +1,5 @@
-# ifndef __CRANK_NICHOLSON_SOLVER_H__
-# define __CRANK_NICHOLSON_SOLVER_H__
+# ifndef __CRANK_NICOLSON_SOLVER_H__
+# define __CRANK_NICOLSON_SOLVER_H__
 
 # include "RungeKutta.H"
 # include "rhsODEproblem.H"
