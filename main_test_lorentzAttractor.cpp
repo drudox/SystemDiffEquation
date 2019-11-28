@@ -1,16 +1,16 @@
 # include <iostream>
 # include <iomanip>
 # include <string>
-# include "rhsODEproblem.H" 
 # include <cmath>
-# include "ForwardEulerSolver.H"
-# include "BackwardEulerSolver.H"
-# include "ModifiedEulerSolver.H"
-# include "HeunSolver.H"
-# include "RungeKutta4Solver.H"
-# include "LeapFrogSolver.H"
-# include "AdamsMoulton2ndSolver.H"
-# include "AdamsBashforth2ndSolver.H"
+# include "Euler/ForwardEulerSolver.H"
+# include "Euler/BackwardEulerSolver.H"
+# include "RungeKutta/ModifiedEuler/ModifiedEulerSolver.H"
+# include "RungeKutta/Heun/HeunSolver.H"
+# include "RungeKutta/RungeKutta4th/RungeKutta4Solver.H"
+# include "MultiStep/LeapFrogSolver.H"
+# include "MultiStep/AdamsMethods/AdamsMoulton/AdamsMoulton2ndSolver.H"
+# include "MultiStep/AdamsMethods/AdamsBashforth/AdamsBashforth2ndSolver.H"
+# include "rhsODEproblem.H" 
 
 
 using namespace std;

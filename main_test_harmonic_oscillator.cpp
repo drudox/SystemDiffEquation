@@ -5,10 +5,10 @@
 # include <cmath>
 # include "Euler/ForwardEulerSolver.H"
 # include "Euler/BackwardEulerSolver.H"
-# include "RungeKutta/ModifiedEulerSolver.H"
-# include "RungeKutta/HeunSolver.H"
+# include "RungeKutta/ModifiedEuler/ModifiedEulerSolver.H"
+# include "RungeKutta/Heun/HeunSolver.H"
 # include "RungeKutta/RungeKutta4th/RungeKutta4thSolver.H"
-# include "Multistep/AdamsMethods/AdamsBashforth/AdamsBashforth2ndSolver.H"
+# include "MultiStep/AdamsMethods/AdamsBashforth/AdamsBashforth2ndSolver.H"
 
 using namespace std;
 using namespace mg::numeric::odesystem ;

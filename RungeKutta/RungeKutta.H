@@ -1,8 +1,8 @@
 # ifndef __RUNGEKUTTA_H__
 # define __RUNGEKUTTA_H__ 
 
-# include "rhsODEproblem.H"
-# include "OdeSolver.H"
+# include "../rhsODEproblem.H"
+# include "../OdeSolver.H"
 
 
 namespace mg { 

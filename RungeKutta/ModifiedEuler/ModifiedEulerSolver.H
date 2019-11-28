@@ -2,8 +2,8 @@
 #define __MODIFIED_EULER_H__
 
 
-# include "rhsODEproblem.H"
-# include "RungeKutta.H"
+# include "../../rhsODEproblem.H"
+# include "../../RungeKutta/RungeKutta.H"
 
 namespace mg { 
                namespace numeric {

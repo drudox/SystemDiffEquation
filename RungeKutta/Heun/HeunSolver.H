@@ -1,8 +1,8 @@
 # ifndef __HEUN_SOLVER_H__
 # define __HEUN_SOLVER_H__
 
-# include "RungeKutta.H"
-# include "rhsODEproblem.H"
+# include "../RungeKutta.H"
+# include "../../rhsODEproblem.H"
 
 namespace mg {
                 namespace numeric {
